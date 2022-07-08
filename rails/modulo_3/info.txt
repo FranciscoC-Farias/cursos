@@ -1,0 +1,17 @@
+#### Scaffold #### Usado para criar tabelas no banco de dados ####
+  OBS: A tabela é sempre escrita com a primeira letra maiúscula e no singular.
+    EX: rails generate scaffold <tabela> <campo:tipo> <campo:tipo> 
+
+#### rails db:migrate  ####
+
+
+#### Para acessar o banco de dados: ####
+rails db
+
+
+#### tasks de banco de dados que mais são usadas: ####
+OBS: Para verificar todas as taskes disponíveis: rails -T
+      Para filtrar o: rails -T <filtro>
+rails db:create    >  cria o banco de dados;
+rails db:drop      > apaga o db
+rails db:rollback  > desfaz a ultima migration

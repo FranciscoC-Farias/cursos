@@ -1,0 +1,3 @@
+rails generate scaffold <Model(nome da tabela)> <campo:tipo>  <campo:tipo>
+
+se os campos da tabela forem string, eu não preciso espeficiar o tipo
