@@ -1,0 +1,14 @@
+## Ruby
+Documentação;
+  https://www.ruby-lang.org/pt/documentation/
+    Offline: http://devdocs.io/
+    ri : documentação remota
+
+Core (Como executar determinados comandos);
+  https://ruby-doc.org/core-2.5.1/
+
+Standard Library;
+  http://ruby-doc.org/stdlib-2.5.1/
+
+API Dock;
+  https://apidock.com/ruby
