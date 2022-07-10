@@ -10,9 +10,9 @@ class CoinsTest < ApplicationSystemTestCase
     assert_selector "h1", text: "Coins"
   end
 
-  test "creating a Coin" do
+  test "should create coin" do
     visit coins_url
-    click_on "New Coin"
+    click_on "New coin"
 
     fill_in "Acronym", with: @coin.acronym
     fill_in "Description", with: @coin.description
@@ -23,9 +23,9 @@ class CoinsTest < ApplicationSystemTestCase
     click_on "Back"
   end
 
-  test "updating a Coin" do
-    visit coins_url
-    click_on "Edit", match: :first
+  test "should update Coin" do
+    visit coin_url(@coin)
+    click_on "Edit this coin", match: :first
 
     fill_in "Acronym", with: @coin.acronym
     fill_in "Description", with: @coin.description
@@ -36,11 +36,9 @@ class CoinsTest < ApplicationSystemTestCase
     click_on "Back"
   end
 
-  test "destroying a Coin" do
-    visit coins_url
-    page.accept_confirm do
-      click_on "Destroy", match: :first
-    end
+  test "should destroy Coin" do
+    visit coin_url(@coin)
+    click_on "Destroy this coin", match: :first
 
     assert_text "Coin was successfully destroyed"
   end
