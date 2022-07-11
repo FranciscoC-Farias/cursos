@@ -18,3 +18,10 @@ rails db:create    >  cria o banco de dados;
 rails db:drop      > apaga o db
 rails db:rollback  > desfaz a ultima migration
 ...
+
+
+
+#### Para levantar a aplicação em ambiente diferente, de produção ####
+  RAILS_ENV=production rails s 
+  *rails s -e production*
+OBS: NÃO FUNCIONARAM!
