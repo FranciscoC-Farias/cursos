@@ -1,10 +1,19 @@
-<p style="color: green"><%= notice %></p>
+<p id="notice"><%= notice %></p>
 
-<%= render @coin %>
+<p>
+  <strong>Descrição:</strong>
+  <%= @coin.description %>
+</p>
 
-<div>
-  <%= link_to "Edit this coin", edit_coin_path(@coin) %> |
-  <%= link_to "Back to coins", coins_path %>
+<p>
+  <strong>Sigla:</strong>
+  <%= @coin.acronym %>
+</p>
 
-  <%= button_to "Destroy this coin", @coin, method: :delete %>
-</div>
+<p>
+  <strong>Imagem:</strong>
+  <%= image_tag @coin.url_image, width: 80, height: 50%>
+</p>
+
+<%= link_to 'Editar', edit_coin_path(@coin) %> |
+<%= link_to 'Voltar', coins_path %>
