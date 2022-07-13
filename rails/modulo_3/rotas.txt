@@ -1,4 +1,10 @@
-Verbos: GET, POST
-GET:
+Protocolo HTTP(Hyper Text Transfer Protocol): Protocolo de comunicação universal entre máquinas, utilimos o protocolo HTTP:
+Verbos principais: GET, POST, PUT/PATCH, DELETE
 
-comando para definir a página index padrão: root to: "welcome#index"
+## comando para definir a página index padrão: root to: "welcome#index"
+
+resources: Coins # Cria as rotas do CRUD uma view para cada
+
+# Criando uma rota na mão: 
+	verbo "/controler", to: "controler#index" # cria uma rota baseada no controler
+		EX: GET "/coins", to: "coins/index"
