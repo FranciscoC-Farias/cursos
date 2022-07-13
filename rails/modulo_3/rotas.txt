@@ -1,0 +1,4 @@
+Verbos: GET, POST
+GET:
+
+comando para definir a página index padrão: root to: "welcome#index"
