@@ -1,33 +1,44 @@
-# def procuraDiretorio(pasta,pastaRemovida)
-#   if Dir.exist?("./#{pasta}/#{pastaRemovida}")
-#     puts "O arquivo existe no diretório especificado";
-#   else
-#     puts "O arquivo não existe no diretório especificado";
-#   end
-# end
+def validaPermissao(str)
+  if(str == "não" or str == "nao"  or str == "sim" )
+    return true;
+  else
+    return false;
+  end
+end
 
-# if(ARGV.length > 0 and ARGV.length >= 2)
-#   procuraDiretorio(ARGV[0].to_s,ARGV[1].to_s);
-# end
+def deleta_path(caminhos)
+  
+  caminhosFiltrados = caminhos.filter {|caminho| caminho != "./.git"}
+  
+  puts caminhosFiltrados
+  
+  print "Você deseja excluir os caminhos acima acima (sim ou não): "
+  permissao = STDIN.gets.chomp.downcase;
+
+  if(validaPermissao(permissao))
+    caminhosFiltrados.each do | caminho|
+      pastaDeletada = system("rm -rf #{caminho}");
+      if(pastaDeletada)
+        puts "O caminho #{caminho} foi deletado com sucesso"
+      else
+        puts "Erro ao tentar deletar o caminho #{caminho}: Caminho não encontrado"
+      end
+    end
+  else
+    puts "Escreva somente sim ou não para responder!"
+  end
+
+end
 
 def lista_path(str)
   Dir.chdir(Dir.pwd) do
-    local = Dir.entries(Dir.pwd)
-    local.each do |pasta|
-      if(pasta == str)
-        exit;
-      end
-    end
-    Dir.glob("./**/#{str}");
+    return Dir.glob("./**/#{str}");
   end
 end
 
 param = ARGV[0];
-paths = "";
 
-if(param)
-  paths = lista_path(param)
-else
+if(!param)
   print "Informe o nome do diretório que você deseja excluir: ";
   param = gets.chomp;
 end
@@ -35,9 +46,7 @@ end
 paths = lista_path(param);
 
 unless(paths.empty?)
-  paths.each do |path|
-    puts path
-  end
+  deleta_path(paths)
 else
   puts "#{param} Não encontrado!"
 end
