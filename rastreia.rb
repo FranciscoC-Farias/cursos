@@ -1,5 +1,5 @@
 def validaPermissao(str)
-  if(str == "não" or str == "nao"  or str == "sim" )
+  if(str == "não" or str == "sim" )
     return true;
   else
     return false;
@@ -7,27 +7,38 @@ def validaPermissao(str)
 end
 
 def deleta_path(caminhos)
-  
   caminhosFiltrados = caminhos.filter {|caminho| caminho != "./.git"}
+
+  if(caminhosFiltrados.length == 0)
+    puts "\nO diretório especificado não existe nos níveis e subníveis das pastas subsequentes!"
+    return;
+  end
   
   puts caminhosFiltrados
+  permissao = '';
   
-  print "Você deseja excluir os caminhos acima acima (sim ou não): "
-  permissao = STDIN.gets.chomp.downcase;
-
-  if(validaPermissao(permissao))
-    caminhosFiltrados.each do | caminho|
-      pastaDeletada = system("rm -rf #{caminho}");
-      if(pastaDeletada)
-        puts "O caminho #{caminho} foi deletado com sucesso"
-      else
-        puts "Erro ao tentar deletar o caminho #{caminho}: Caminho não encontrado"
-      end
+  loop do
+    print "\nOs caminhos acima serão deletados. Você tem certeza certeza disso (sim ou não)?: ";
+    permissao = STDIN.gets.chomp.downcase;
+    puts ''
+    if(validaPermissao(permissao))
+      break;
+    else
+      puts "\nEscreva somente sim ou não para responder!"
     end
-  else
-    puts "Escreva somente sim ou não para responder!"
   end
 
+  if(permissao == "sim")
+    caminhosFiltrados.each do |caminho|
+      pastaDeletada = system("rm -rf #{caminho}");
+      if(pastaDeletada)
+        puts "O caminho #{caminho} foi deletado com sucesso";
+      end
+    end
+  elsif(permissao == "não")
+    puts "\nOk, os diretórios serão mantidos! ";
+    return;
+  end
 end
 
 def lista_path(str)
