@@ -19,7 +19,7 @@ def deleta_path(caminhos)
   permissao = '';
   
   loop do
-    print "\nOs caminhos acima serão deletados. Você tem certeza certeza disso (sim ou não)?: ";
+    print "\nOs caminhos acima serão deletados. Você tem certeza disso (sim ou não)?: ";
     permissao = STDIN.gets.chomp.downcase;
     puts ''
     if(validaPermissao(permissao))
