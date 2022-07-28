@@ -1,71 +1,80 @@
-#projeto-teste
-/rails/modulo_3/projeto-teste/bundle
-
-# Ignore the default SQLite database.
-/rails/modulo_3/projeto-teste/db/*.sqlite3
-/rails/modulo_3/projeto-teste/db/*.sqlite3-*
-
-# Ignore all logfiles and tempfiles.
-/rails/modulo_3/projeto-teste/log/*
-rails/modulo_3/projeto-teste/tmp/*
-/!rails/modulo_3/projeto-teste/log/.keep
-!/rails/modulo_3/projeto-teste/tmp/.keep
-
-# Ignore pidfiles, but keep the directory.
-/rails/modulo_3/projeto-teste/tmp/pids/*
-!/rails/modulo_3/projeto-teste/tmp/pids/
-!/rails/modulo_3/projeto-teste/tmp/pids/.keep
-
-# Ignore uploaded files in development.
-/rails/modulo_3/projeto-teste/storage/*
-!/rails/modulo_3/projeto-teste/storage/.keep
-
-/rails/modulo_3/projeto-teste/public/assets
-.rails/modulo_3/projeto-teste/byebug_history
-
-# Ignore master key for decrypting credentials and more.
-/rails/modulo_3/projeto-teste/config/master.key
-
-/rails/modulo_3/projeto-teste/public/packs
-/rails/modulo_3/projeto-teste/public/packs-test
-/rails/modulo_3/projeto-teste/node_modules
-/rails/modulo_3/projeto-teste/yarn-error.log
-/rails/modulo_3/projeto-teste/yarn-debug.log*
-rails/modulo_3/projeto-teste/.yarn-integrity
 
 
 
-#crypo_wallet
-/rails/modulo_3/crypo_wallet/bundle
 
-# Ignore the default SQLite database.
-/rails/modulo_3/crypo_wallet/db/*.sqlite3
-/rails/modulo_3/crypo_wallet/db/*.sqlite3-*
 
-# Ignore all logfiles and tempfiles.
-/rails/modulo_3/crypo_wallet/log/*
-rails/modulo_3/crypo_wallet/tmp/*
-/!rails/modulo_3/crypo_wallet/log/.keep
-!/rails/modulo_3/crypo_wallet/tmp/.keep
 
-# Ignore pidfiles, but keep the directory.
-/rails/modulo_3/crypo_wallet/tmp/pids/*
-!/rails/modulo_3/crypo_wallet/tmp/pids/
-!/rails/modulo_3/crypo_wallet/tmp/pids/.keep
 
-# Ignore uploaded files in development.
-/rails/modulo_3/crypo_wallet/storage/*
-!/rails/modulo_3/crypo_wallet/storage/.keep
+./rails/modulo_3/crypo_wallet/.bundle
 
-/rails/modulo_3/crypo_wallet/public/assets
-.rails/modulo_3/crypo_wallet/byebug_history
 
-# Ignore master key for decrypting credentials and more.
-/rails/modulo_3/crypo_wallet/config/master.key
+./rails/modulo_3/crypo_wallet/db/*.sqlite3
+./rails/modulo_3/crypo_wallet/db/*.sqlite3-*
 
-/rails/modulo_3/crypo_wallet/public/packs
-/rails/modulo_3/crypo_wallet/public/packs-test
-/rails/modulo_3/crypo_wallet/node_modules
-/rails/modulo_3/crypo_wallet/yarn-error.log
-/rails/modulo_3/crypo_wallet/yarn-debug.log*
-rails/modulo_3/crypo_wallet/.yarn-integrity
+
+./rails/modulo_3/crypo_wallet/log/*
+./rails/modulo_3/crypo_wallet/tmp/*
+./rails/modulo_3/crypo_wallet/!log/.keep
+./rails/modulo_3/crypo_wallet/!tmp/.keep
+
+
+./rails/modulo_3/crypo_wallet/tmp/pids/*
+./rails/modulo_3/crypo_wallet/!tmp/pids/
+./rails/modulo_3/crypo_wallet/!tmp/pids/.keep
+
+
+./rails/modulo_3/crypo_wallet/storage/*
+./rails/modulo_3/crypo_wallet/!storage/.keep
+
+./rails/modulo_3/crypo_wallet/public/assets
+./rails/modulo_3/crypo_wallet/.byebug_history
+
+
+./rails/modulo_3/crypo_wallet/config/master.key
+
+./rails/modulo_3/crypo_wallet/public/packs
+./rails/modulo_3/crypo_wallet/public/packs-test
+./rails/modulo_3/crypo_wallet/node_modules
+./rails/modulo_3/crypo_wallet/yarn-error.log
+./rails/modulo_3/crypo_wallet/yarn-debug.log*
+./rails/modulo_3/crypo_wallet/.yarn-integrity
+
+
+
+
+
+
+
+./rails/modulo_3/projeto-teste/.bundle
+
+
+./rails/modulo_3/projeto-teste/db/*.sqlite3
+./rails/modulo_3/projeto-teste/db/*.sqlite3-*
+
+
+./rails/modulo_3/projeto-teste/log/*
+./rails/modulo_3/projeto-teste/tmp/*
+./rails/modulo_3/projeto-teste/!log/.keep
+./rails/modulo_3/projeto-teste/!tmp/.keep
+
+
+./rails/modulo_3/projeto-teste/tmp/pids/*
+./rails/modulo_3/projeto-teste/!tmp/pids/
+./rails/modulo_3/projeto-teste/!tmp/pids/.keep
+
+
+./rails/modulo_3/projeto-teste/storage/*
+./rails/modulo_3/projeto-teste/!storage/.keep
+
+./rails/modulo_3/projeto-teste/public/assets
+./rails/modulo_3/projeto-teste/.byebug_history
+
+
+./rails/modulo_3/projeto-teste/config/master.key
+
+./rails/modulo_3/projeto-teste/public/packs
+./rails/modulo_3/projeto-teste/public/packs-test
+./rails/modulo_3/projeto-teste/node_modules
+./rails/modulo_3/projeto-teste/yarn-error.log
+./rails/modulo_3/projeto-teste/yarn-debug.log*
+./rails/modulo_3/projeto-teste/.yarn-integrity

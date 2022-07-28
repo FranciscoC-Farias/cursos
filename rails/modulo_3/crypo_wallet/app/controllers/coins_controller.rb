@@ -1,4 +1,6 @@
 class CoinsController < ApplicationController
+  layout "adm"
+  
   before_action :set_coin, only: %i[ show edit update destroy ]
 
   # GET /coins or /coins.json
@@ -32,7 +34,7 @@ class CoinsController < ApplicationController
         format.json { render json: @coin.errors, status: :unprocessable_entity }
       end
     end
-  end
+  end 
 
   # PATCH/PUT /coins/1 or /coins/1.json
   def update
@@ -54,7 +56,7 @@ class CoinsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to coins_url, notice: "Coin was successfully destroyed." }
       format.json { head :no_content }
-    end
+    end 
   end
 
   private
