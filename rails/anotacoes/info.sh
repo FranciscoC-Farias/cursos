@@ -1,3 +1,5 @@
+%x() ou system() # permite inserir comandos do terminal 
+
 ## Scaffold: Usado para criar tabelas no banco de dados
 # OBS: A tabela é sempre escrita com a primeira letra maiúscula e no singular.
   #EX: 
@@ -27,25 +29,6 @@
 <%= link_to "Cadastrar moedas" , coins_path %>
 <%= image_tag coin.url_image, size: 25x25 %>
 #documentação: https:://api.rubyonrails.org/classes/ActiveonView/Helpers/AssetTagHelper.html#method-i-image_tag
-
-
-
-
-
-
-
-
-
-# tasks de banco de dados que mais são usadas: ####
-# Para verificar todas as task's disponíveis: 
-  * rails -T *
-# Para filtrar o:
- * rails -T <filtro> * 
-#task's mais utilizadas: 
-  * rails db:create *    # > cria o banco de dados;
-  * rails db:drop *     # > apaga o db
-  * rails db:rollback * # > desfaz a ultima migration
-
 
 
 
