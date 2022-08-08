@@ -29,12 +29,5 @@ ActiveRecord::Schema.define(version: 2022_08_06_003424) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "miningtypes", force: :cascade do |t|
-    t.string "name"
-    t.string "acronym"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   add_foreign_key "coins", "mining_types"
 end
