@@ -7,5 +7,3 @@
 * **Ruby** versão 3.1.3;
 * **Ruby On Rails** versão 6.1.6;
 * **Node** versão 16.6.0;
-
-asadad
